@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "rg" {
   name     = "bookRg"
-  location = "West Europe"
+  location = var.location
 
   tags = {
     environment = "Terraform Azure"
